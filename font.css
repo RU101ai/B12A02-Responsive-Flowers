@@ -82,3 +82,26 @@ h3 {
   border-radius: 10px;
 }
 
+@media screen and (max-width:576px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    grid-column: 1/-1;
+    grid-row: auto;
+    height: 180px;
+  }
+}
+
+.join_section {
+  background-image: url(./assets/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 300px 200px 300px;
+}
+
